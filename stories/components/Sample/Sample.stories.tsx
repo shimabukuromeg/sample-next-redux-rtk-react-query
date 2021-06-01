@@ -1,5 +1,6 @@
 import { Story, Meta } from '@storybook/react';
 import { Sample, SampleProps } from '../../../src/components/Sample';
+import { ChakraProvider } from '@chakra-ui/react';
 
 export default {
   title: 'Sample/Sample',
@@ -7,10 +8,12 @@ export default {
 } as Meta;
 
 const Template: Story<SampleProps> = (args) => (
-  <Sample {...args} />
+  <ChakraProvider>
+    <Sample {...args} />
+  </ChakraProvider>
 );
 
 export const Default = Template.bind({});
 Default.args = {
-  name: "sample name",
+  name: 'This is the Box',
 };

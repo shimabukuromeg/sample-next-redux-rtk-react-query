@@ -1,4 +1,6 @@
 import { FC, memo } from 'react';
+import { Box } from "@chakra-ui/react"
+import { ChakraProvider } from '@chakra-ui/react';
 
 export type SampleProps = {
   name: string;
@@ -7,6 +9,8 @@ export type SampleProps = {
 export const Sample: FC<SampleProps> = memo(({ name }) => (
   <>
     <h1>Sample</h1>
-    <div>{ name }</div>
+    <Box bg="tomato" w="100%" p={16} color="white">
+      { name }
+    </Box>
   </>
 ));
