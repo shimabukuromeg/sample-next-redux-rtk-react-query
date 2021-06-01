@@ -2,10 +2,12 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    'jest/globals': true,
   },
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:jest/recommended',
     'airbnb',
   ],
   parser: '@typescript-eslint/parser',
@@ -19,6 +21,7 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
+    'jest',
   ],
   settings: {
     // import 時に js, jsx, ts, tsx の拡張子を読み込めるようにする
@@ -29,6 +32,14 @@ module.exports = {
     },
   },
   rules: {
+    // test 関連のファイルは devDependencies から import OKにする
+    'import/no-extraneous-dependencies': [2, {
+      devDependencies: [
+        'setupTests.js',
+        '**/*.test.ts',
+        '**/*.test.tsx',
+      ],
+    }],
     // warn と error はメッセージとして使いたいのでワーニング対象から外す
     'no-console': [1, { allow: ['warn', 'error'] }],
 
