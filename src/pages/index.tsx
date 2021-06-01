@@ -1,10 +1,10 @@
-import { NextPage } from 'next'
+import { NextPage } from 'next';
 import Head from 'next/head';
 
 const Index: NextPage<void> = () => (
   <>
     <Head>
-        <title>トップページ</title>
+      <title>トップページ</title>
     </Head>
     <div>
       トップページ
