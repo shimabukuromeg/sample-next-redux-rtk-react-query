@@ -38,6 +38,7 @@ module.exports = {
         'setupTests.js',
         '**/*.test.ts',
         '**/*.test.tsx',
+        '**/*.stories.tsx',
       ],
     }],
     // warn と error はメッセージとして使いたいのでワーニング対象から外す
