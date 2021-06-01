@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Sample/Sample Default 1`] = `
+Array [
+  <h1>
+    Sample
+  </h1>,
+  <div>
+    sample name
+  </div>,
+]
+`;
