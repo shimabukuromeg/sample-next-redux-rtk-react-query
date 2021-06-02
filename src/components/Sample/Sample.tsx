@@ -1,16 +1,17 @@
-import { FC, memo } from 'react';
-import { Box } from "@chakra-ui/react"
-import { ChakraProvider } from '@chakra-ui/react';
+import { FC, memo, useState } from 'react';
+import { Button, Stack } from '@chakra-ui/react';
+import { Select } from "@chakra-ui/react"
 
 export type SampleProps = {
   name: string;
 };
 
 export const Sample: FC<SampleProps> = memo(({ name }) => (
-  <>
-    <h1>Sample</h1>
-    <Box bg="tomato" w="100%" p={16} color="white">
-      { name }
-    </Box>
-  </>
+  <Stack spacing={4} direction="row" align="center">
+    <Select placeholder="Select option">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </Select>
+  </Stack>
 ));
