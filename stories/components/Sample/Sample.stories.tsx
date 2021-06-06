@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react';
-import { Sample, SampleProps } from '../../../src/components/Sample';
 import { ChakraProvider } from '@chakra-ui/react';
+import { Sample, SampleProps } from '../../../src/components/Sample';
 
 export default {
   title: 'Sample/Sample',

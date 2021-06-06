@@ -1,6 +1,5 @@
 import { FC, memo, useState } from 'react';
-import { Button, Stack } from '@chakra-ui/react';
-import { Select } from "@chakra-ui/react"
+import { Button, Stack, Select } from '@chakra-ui/react';
 
 export type SampleProps = {
   name: string;
