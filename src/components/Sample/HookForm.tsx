@@ -5,8 +5,6 @@ import {
   VStack,
   Heading,
   HStack,
-  Input,
-  Text,
   Divider,
 } from '@chakra-ui/react';
 import { ReactElement } from 'react';
